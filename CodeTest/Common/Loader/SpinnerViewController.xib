@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SpinnerViewController" customModule="CodeTest" customModuleProvider="target">
+            <connections>
+                <outlet property="spinner" destination="wUh-OV-Kdm" id="6i5-iv-GR6"/>
+                <outlet property="spinnerContainer" destination="s1M-vv-5UI" id="Ui8-pR-VJb"/>
+                <outlet property="view" destination="iN0-l3-epB" id="5SD-UL-28o"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s1M-vv-5UI">
+                    <rect key="frame" x="165" y="411" width="84" height="84"/>
+                    <subviews>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ic_loading_spinner_black_normal" translatesAutoresizingMaskIntoConstraints="NO" id="wUh-OV-Kdm">
+                            <rect key="frame" x="14" y="14" width="56" height="56"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="84" id="573-zM-7ll">
+                            <variation key="heightClass=regular-widthClass=regular" constant="120"/>
+                        </constraint>
+                        <constraint firstAttribute="width" constant="84" id="6tC-rf-o3z">
+                            <variation key="heightClass=regular-widthClass=regular" constant="120"/>
+                        </constraint>
+                        <constraint firstItem="wUh-OV-Kdm" firstAttribute="top" secondItem="s1M-vv-5UI" secondAttribute="top" constant="14" id="REC-YT-eCi">
+                            <variation key="heightClass=regular-widthClass=regular" constant="18"/>
+                        </constraint>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="84" id="Sk8-vr-Pjm"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="84" id="dU4-09-nZy"/>
+                        <constraint firstItem="wUh-OV-Kdm" firstAttribute="leading" secondItem="s1M-vv-5UI" secondAttribute="leading" constant="14" id="kvu-Tb-2L1">
+                            <variation key="heightClass=regular-widthClass=regular" constant="18"/>
+                        </constraint>
+                        <constraint firstAttribute="bottom" secondItem="wUh-OV-Kdm" secondAttribute="bottom" constant="14" id="lha-aG-gt0">
+                            <variation key="heightClass=regular-widthClass=regular" constant="18"/>
+                        </constraint>
+                        <constraint firstAttribute="trailing" secondItem="wUh-OV-Kdm" secondAttribute="trailing" constant="14" id="u1g-Jw-E5k">
+                            <variation key="heightClass=regular-widthClass=regular" constant="18"/>
+                        </constraint>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="subviews">
+                            <exclude reference="wUh-OV-Kdm"/>
+                        </mask>
+                        <mask key="constraints">
+                            <exclude reference="REC-YT-eCi"/>
+                            <exclude reference="kvu-Tb-2L1"/>
+                            <exclude reference="lha-aG-gt0"/>
+                            <exclude reference="u1g-Jw-E5k"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="subviews">
+                            <include reference="wUh-OV-Kdm"/>
+                        </mask>
+                        <mask key="constraints">
+                            <include reference="REC-YT-eCi"/>
+                            <include reference="kvu-Tb-2L1"/>
+                            <include reference="lha-aG-gt0"/>
+                            <include reference="u1g-Jw-E5k"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <mask key="subviews">
+                            <include reference="wUh-OV-Kdm"/>
+                        </mask>
+                        <mask key="constraints">
+                            <include reference="REC-YT-eCi"/>
+                            <include reference="kvu-Tb-2L1"/>
+                            <include reference="lha-aG-gt0"/>
+                            <include reference="u1g-Jw-E5k"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="s1M-vv-5UI" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="8jb-qs-Ti2"/>
+                <constraint firstItem="s1M-vv-5UI" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="G3s-yd-1n3"/>
+            </constraints>
+            <point key="canvasLocation" x="-55" y="-15"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_loading_spinner_black_normal" width="56" height="56"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
